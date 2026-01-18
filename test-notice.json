@@ -1,0 +1,45 @@
+{
+  "documentInfo": {
+    "DOCUMENT_ID": "HSM-2026-541270",
+    "NOTICE_DATE": "January 18, 2026",
+    "GENERATION_TIMESTAMP": "01/18/2026, 10:41:12 PM UTC"
+  },
+  "mortgageInfo": {
+    "MORTGAGE_DATE": "January 15, 2005",
+    "MORTGAGE_REF_NUMBER": "2005-001234-MTG",
+    "RECORDING_OFFICE": "County Clerk's Office, [County Name], [State]",
+    "RECORDING_DATE": "January 20, 2005",
+    "BOOK_VOLUME": "12345",
+    "PAGE_NUMBER": "678"
+  },
+  "propertyInfo": {
+    "PROPERTY_ADDRESS": "123 Main Street",
+    "PROPERTY_CITY_STATE_ZIP": "Anytown, State 12345",
+    "LEGAL_DESCRIPTION": "Lot 10, Block 5, Subdivision Name, as recorded in Plat Book 100, Page 50",
+    "PARCEL_ID": "12-34-567-890-001"
+  },
+  "parties": {
+    "BORROWER_NAME": "John Doe and Jane Doe",
+    "LENDER_NAME": "Original Lender Bank, N.A.",
+    "CURRENT_MORTGAGEE": "Helion Prime Financial Trust",
+    "SERVICER_NAME": "N/A"
+  },
+  "satisfactionDetails": {
+    "ORIGINAL_AMOUNT": "$250,000.00",
+    "SATISFACTION_DATE": "June 15, 2021",
+    "FINAL_PAYMENT_DATE": "June 10, 2021",
+    "SATISFACTION_METHOD": "Full Payment"
+  },
+  "additionalInfo": {
+    "ADDITIONAL_NOTES": "All associated fees, charges, and obligations have been satisfied. No further amounts are due or owing.",
+    "CONTACT_INFO": "legal@helionprimefinancial.com or (555) 123-4567",
+    "VERIFICATION_URL": "https://verify.helionprimefinancial.com",
+    "FOOTER_CONTACT_INFO": "123 Financial Plaza, Suite 500, City, State 12345 | Phone: (555) 123-4567"
+  },
+  "authorization": {
+    "AUTHORIZED_NAME": "Robert Smith",
+    "AUTHORIZED_TITLE": "Vice President, Legal Affairs",
+    "ORGANIZATION_NAME": "Helion Prime Financial Trust",
+    "SIGNATURE_DATE": "June 23, 2021"
+  }
+}

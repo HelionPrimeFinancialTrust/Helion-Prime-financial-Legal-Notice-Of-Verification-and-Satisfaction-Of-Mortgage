@@ -1,0 +1,45 @@
+{
+  "documentInfo": {
+    "DOCUMENT_ID": "HSM-2021-000001",
+    "NOTICE_DATE": "June 23, 2021",
+    "GENERATION_TIMESTAMP": "2021-06-23 10:30:00 EST"
+  },
+  "mortgageInfo": {
+    "MORTGAGE_DATE": "January 15, 2005",
+    "MORTGAGE_REF_NUMBER": "2005-001234-MTG",
+    "RECORDING_OFFICE": "County Clerk's Office, Example County, California",
+    "RECORDING_DATE": "January 20, 2005",
+    "BOOK_VOLUME": "12345",
+    "PAGE_NUMBER": "678"
+  },
+  "propertyInfo": {
+    "PROPERTY_ADDRESS": "123 Main Street",
+    "PROPERTY_CITY_STATE_ZIP": "San Francisco, CA 94102",
+    "LEGAL_DESCRIPTION": "Lot 10, Block 5, Sunset Meadows Subdivision, as recorded in Plat Book 100, Page 50, Official Records of Example County",
+    "PARCEL_ID": "12-34-567-890-001"
+  },
+  "parties": {
+    "BORROWER_NAME": "John Doe and Jane Doe",
+    "LENDER_NAME": "First National Bank, N.A.",
+    "CURRENT_MORTGAGEE": "Helion Prime Financial Trust",
+    "SERVICER_NAME": "ABC Mortgage Servicing LLC"
+  },
+  "satisfactionDetails": {
+    "ORIGINAL_AMOUNT": "$250,000.00",
+    "SATISFACTION_DATE": "June 15, 2021",
+    "FINAL_PAYMENT_DATE": "June 10, 2021",
+    "SATISFACTION_METHOD": "Full Payment and Satisfaction"
+  },
+  "additionalInfo": {
+    "ADDITIONAL_NOTES": "All associated fees, charges, penalties, and obligations under the mortgage have been completely satisfied. No further amounts are due or owing. This satisfaction releases all liens and encumbrances created by the referenced mortgage.",
+    "CONTACT_INFO": "legal@helionprimefinancial.com or (555) 123-4567",
+    "VERIFICATION_URL": "https://verify.helionprimefinancial.com/HSM-2021-000001",
+    "FOOTER_CONTACT_INFO": "123 Financial Plaza, Suite 500, San Francisco, CA 94102 | Phone: (555) 123-4567 | Fax: (555) 123-4568"
+  },
+  "authorization": {
+    "AUTHORIZED_NAME": "Robert J. Smith",
+    "AUTHORIZED_TITLE": "Vice President, Legal Affairs",
+    "ORGANIZATION_NAME": "Helion Prime Financial Trust",
+    "SIGNATURE_DATE": "June 23, 2021"
+  }
+}

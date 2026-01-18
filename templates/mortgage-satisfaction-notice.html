@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Notice of Satisfaction and Verification of Mortgage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            color: #000;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 1in;
+            background: #fff;
+        }
+
+        .document-header {
+            text-align: center;
+            margin-bottom: 2em;
+            border-bottom: 2px solid #000;
+            padding-bottom: 1em;
+        }
+
+        .document-header h1 {
+            font-size: 18pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 0.5em;
+            letter-spacing: 1px;
+        }
+
+        .document-header .subtitle {
+            font-size: 14pt;
+            font-weight: bold;
+            margin-bottom: 0.3em;
+        }
+
+        .document-header .date {
+            font-size: 12pt;
+            font-style: italic;
+            margin-top: 0.5em;
+        }
+
+        .section {
+            margin-bottom: 1.5em;
+        }
+
+        .section-title {
+            font-size: 14pt;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 0.5em;
+            margin-top: 1em;
+        }
+
+        .field-group {
+            margin-bottom: 1em;
+            padding-left: 2em;
+        }
+
+        .field-label {
+            font-weight: bold;
+            display: inline-block;
+            min-width: 200px;
+        }
+
+        .field-value {
+            display: inline;
+        }
+
+        .notice-body {
+            text-align: justify;
+            margin: 1.5em 0;
+            padding: 1em;
+            border-left: 3px solid #333;
+            background: #f9f9f9;
+        }
+
+        .signature-section {
+            margin-top: 3em;
+            page-break-inside: avoid;
+        }
+
+        .signature-block {
+            margin-top: 2em;
+            margin-bottom: 1em;
+        }
+
+        .signature-line {
+            border-top: 1px solid #000;
+            width: 300px;
+            margin-top: 3em;
+            margin-bottom: 0.3em;
+        }
+
+        .signature-label {
+            font-size: 10pt;
+            font-style: italic;
+        }
+
+        .footer {
+            margin-top: 3em;
+            padding-top: 1em;
+            border-top: 1px solid #ccc;
+            font-size: 9pt;
+            text-align: center;
+            color: #666;
+        }
+
+        .legal-disclaimer {
+            margin-top: 2em;
+            padding: 1em;
+            background: #f0f0f0;
+            border: 1px solid #ccc;
+            font-size: 9pt;
+            text-align: justify;
+        }
+
+        .document-id {
+            font-family: 'Courier New', monospace;
+            font-size: 9pt;
+            color: #666;
+            margin-top: 1em;
+        }
+
+        @media print {
+            body {
+                padding: 0.5in;
+            }
+
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="document-header">
+        <h1>Public Notice</h1>
+        <div class="subtitle">Satisfaction and Verification of Mortgage</div>
+        <div class="date">{{NOTICE_DATE}}</div>
+        <div class="document-id">Document ID: {{DOCUMENT_ID}}</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">I. Mortgage Information</div>
+        <div class="field-group">
+            <div><span class="field-label">Original Mortgage Date:</span> <span class="field-value">{{MORTGAGE_DATE}}</span></div>
+            <div><span class="field-label">Mortgage Reference Number:</span> <span class="field-value">{{MORTGAGE_REF_NUMBER}}</span></div>
+            <div><span class="field-label">Recording Office:</span> <span class="field-value">{{RECORDING_OFFICE}}</span></div>
+            <div><span class="field-label">Recording Date:</span> <span class="field-value">{{RECORDING_DATE}}</span></div>
+            <div><span class="field-label">Book/Volume:</span> <span class="field-value">{{BOOK_VOLUME}}</span></div>
+            <div><span class="field-label">Page:</span> <span class="field-value">{{PAGE_NUMBER}}</span></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">II. Property Information</div>
+        <div class="field-group">
+            <div><span class="field-label">Property Address:</span> <span class="field-value">{{PROPERTY_ADDRESS}}</span></div>
+            <div><span class="field-label">City, State, ZIP:</span> <span class="field-value">{{PROPERTY_CITY_STATE_ZIP}}</span></div>
+            <div><span class="field-label">Legal Description:</span> <span class="field-value">{{LEGAL_DESCRIPTION}}</span></div>
+            <div><span class="field-label">Parcel/Tax ID:</span> <span class="field-value">{{PARCEL_ID}}</span></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">III. Parties</div>
+        <div class="field-group">
+            <div><span class="field-label">Original Borrower(s):</span> <span class="field-value">{{BORROWER_NAME}}</span></div>
+            <div><span class="field-label">Original Lender:</span> <span class="field-value">{{LENDER_NAME}}</span></div>
+            <div><span class="field-label">Current Mortgagee:</span> <span class="field-value">{{CURRENT_MORTGAGEE}}</span></div>
+            <div><span class="field-label">Servicer (if applicable):</span> <span class="field-value">{{SERVICER_NAME}}</span></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">IV. Satisfaction Details</div>
+        <div class="field-group">
+            <div><span class="field-label">Original Loan Amount:</span> <span class="field-value">{{ORIGINAL_AMOUNT}}</span></div>
+            <div><span class="field-label">Satisfaction Date:</span> <span class="field-value">{{SATISFACTION_DATE}}</span></div>
+            <div><span class="field-label">Final Payment Date:</span> <span class="field-value">{{FINAL_PAYMENT_DATE}}</span></div>
+            <div><span class="field-label">Satisfaction Method:</span> <span class="field-value">{{SATISFACTION_METHOD}}</span></div>
+        </div>
+    </div>
+
+    <div class="notice-body">
+        <p><strong>NOTICE IS HEREBY GIVEN</strong> that the mortgage described above, originally executed by {{BORROWER_NAME}}
+        in favor of {{LENDER_NAME}}, dated {{MORTGAGE_DATE}}, and recorded in {{RECORDING_OFFICE}} on {{RECORDING_DATE}}
+        in Book {{BOOK_VOLUME}}, Page {{PAGE_NUMBER}}, has been FULLY SATISFIED and PAID IN FULL.</p>
+
+        <p>The undersigned, {{CURRENT_MORTGAGEE}}, as the current holder and mortgagee of the aforementioned mortgage,
+        hereby certifies and verifies that all obligations under said mortgage have been completely satisfied, and the
+        lien created by said mortgage is hereby released and discharged.</p>
+
+        <p>This satisfaction and release applies to the property commonly known as {{PROPERTY_ADDRESS}}, {{PROPERTY_CITY_STATE_ZIP}},
+        and legally described as: {{LEGAL_DESCRIPTION}}.</p>
+
+        <p>{{ADDITIONAL_NOTES}}</p>
+    </div>
+
+    <div class="signature-section">
+        <div class="section-title">V. Certification and Verification</div>
+        <p>The undersigned hereby certifies under penalty of perjury that the information contained in this notice is true,
+        accurate, and complete to the best of their knowledge.</p>
+
+        <div class="signature-block">
+            <div class="signature-line"></div>
+            <div class="signature-label">Authorized Signature</div>
+            <div style="margin-top: 1em;">
+                <div><strong>Printed Name:</strong> {{AUTHORIZED_NAME}}</div>
+                <div><strong>Title:</strong> {{AUTHORIZED_TITLE}}</div>
+                <div><strong>Organization:</strong> {{ORGANIZATION_NAME}}</div>
+                <div><strong>Date:</strong> {{SIGNATURE_DATE}}</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="legal-disclaimer">
+        <strong>LEGAL NOTICE:</strong> This document constitutes a formal notice of mortgage satisfaction and verification.
+        It is recommended that this notice be recorded in the appropriate county or municipal recording office where the
+        original mortgage was recorded. For questions or concerns regarding this notice, please contact {{CONTACT_INFO}}.
+        <br><br>
+        This document is generated by Helion Prime Financial Trust document management system.
+        Verification of authenticity can be performed at {{VERIFICATION_URL}}.
+    </div>
+
+    <div class="footer">
+        <div><strong>Helion Prime Financial Trust</strong></div>
+        <div>Document Generated: {{GENERATION_TIMESTAMP}}</div>
+        <div>{{FOOTER_CONTACT_INFO}}</div>
+    </div>
+</body>
+</html>

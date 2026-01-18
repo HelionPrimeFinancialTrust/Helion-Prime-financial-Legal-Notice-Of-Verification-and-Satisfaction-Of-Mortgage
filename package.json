@@ -1,0 +1,34 @@
+{
+  "name": "helion-prime-legal-notice-generator",
+  "version": "1.0.0",
+  "description": "Automated legal notice generation and PDF creation for Helion Prime Financial Trust",
+  "main": "scripts/generate-pdf.js",
+  "scripts": {
+    "generate": "node scripts/generate-pdf.js",
+    "generate-example": "node scripts/generate-pdf.js examples/example-data.json",
+    "format": "node scripts/format-document.js",
+    "quick-start": "node scripts/quick-start.js",
+    "batch": "node scripts/batch-generate.js",
+    "new-template": "node scripts/create-template.js"
+  },
+  "keywords": [
+    "legal",
+    "mortgage",
+    "pdf-generation",
+    "document-automation"
+  ],
+  "author": "Helion Prime Financial Trust",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^21.0.0",
+    "handlebars": "^4.7.8",
+    "yargs": "^17.7.2",
+    "glob": "^10.3.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
